@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Account Details -      </title>
+  <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+  <div class="dashboard">
+      <!-- Sidebar + Mobile Menu -->
+<aside class="sidebar" id="sidebar">
+    <h2 style="font-size: 50px;">     </h2>
+    <nav id="sidebarMenu">
+      <a href="dashboad.html">🏠 Dashboard</a>
+      <a href="account.html">💳 Accounts</a>
+      <a href="transfer.html">💸 Transfer</a>
+      <a href="statements.html">📈 Statements</a>
+      <a href="settings.html">⚙️ Settings</a>
+      <a href="index.html">🚪 Logout</a>
+    </nav>
+  </aside>
+  
+  <!-- Hamburger for Mobile -->
+  <header class="mobile-header">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="mobile-title">      Dashboard</span>
+  </header>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="header-left">
+          <h1>Account Information</h1>
+        </div>
+        <div class="profile-icon">
+          <img src="https://i.pravatar.cc/40?img=3" alt="Profile" />
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Checking Account</h3>
+          <p class="balance">$300,250.00</p>
+          <p class="details">Account #: 001508143</p>
+          <p class="details">Type: Personal Checking</p>
+        </div>
+        <div class="card">
+          <h3>Savings Account</h3>
+          <p class="balance">$12,480,000.50</p>
+          <p class="details">Account #: 2047890532</p>
+          <p class="details">Type: High-Yield Savings</p>
+        </div>
+        <div class="card">
+          <h3>Credit Card</h3>
+          <p class="balance">-$45,080.75</p>
+          <p class="details">Card #: **** **** **** 4567</p>
+          <p class="details">Type: Rewards Credit Card</p>
+        </div>
+      </section>
+
+      <section class="transactions">
+        <h2>Account Actions</h2>
+        <ul class="transaction-list">
+          <li>🔄 Recent Transfers</li>
+          <li>📄 View e-Statements</li>
+          <li>🛠 Update Account Info</li>
+          <li>🔒 Manage Security Settings</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script>
+        function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
+  </script>
+</body>
+</html>

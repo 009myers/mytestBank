@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ecf4f3badf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Login</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light  nav12">
+    <div style="margin-left: 150px;">
+   </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid">
+        
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="logi">
+           <ul>
+            <li>
+                <i class="fa fa-search"></i><a href="">Search</a>
+           
+            </li>
+            <li>
+                <i class="fa fa-location"></i> <a href="">Locations</a>
+              
+            </li>
+            <li>
+                <i class="fa fa-question"></i><a href="">Support</a>
+            </li>
+           </ul>
+        </div>
+        <!-- <div>
+          <a href="login.html"><button class="butt1">LOG IN</button></a>
+          <button class="butt2">JOIN     </button>
+        </div> -->
+
+      
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid carol2" >
+    <div class="row " >
+      <!-- Login Form Column -->
+      <div class="col-md-5 column">
+        <h1 class="text">     Log In Options</h1>
+        <p class="text6">Online Banking</p>
+
+        <!-- Login Error Message -->
+        <div id="loginError" class="alert alert-danger" style="display: none;">
+          ⚠️ The User ID and/or Password you provided does not match our records. Please re-enter your information and try again.
+        </div>
+
+        <form id="loginForm" style="width: 350px;">
+          <div>
+            <p class="text7">User ID</p>
+            <input type="text" required id="userId" class="form-control mb-2" />
+            <div id="userIdError" style="color: red; font-size: 14px; display: none; margin-top: 5px;"></div>
+          </div>
+          <div>
+            <p class="text7">Password</p>
+            <input type="password" required id="password" class="form-control mb-2" />
+            <div id="passwordError" style="color: red; font-size: 14px; display: none; margin-top: 5px;"></div>
+          </div>
+          <button type="submit" style=" background-color:rgb(18, 119, 116); color: white;" class="btn w-100" id="loginBtn">Log In</button>
+        </form>
+        <br />     <br />    
+ <div class="forget">
+    <a href="#" class="tags">Forgot your Password?</a><br />     <br />
+    <a href="#" class="tag1">Forgot your User ID?</a>
+ </div>
+
+        <p class="text8">Already a Member?</p>
+        <p class="text9">If you are not enrolled in Online & Mobile <br /> Banking yet <a href="#" class="links">click here to enroll.</a></p>
+
+        <p class="text10">Not a Member?</p>
+        <p ><a href="#" class="link1">Sign up for membership</a></p>
+      </div>
+
+      <!-- Business Login Column -->
+      <div class="col-md-6 container2">
+        <h3 class="text11">Business Online Banking</h3>
+        <p class="text12">
+          <span class="spantext">For LLCs Using an EIN</span> for tax reporting, Partnerships and <br />
+          Corporations.
+        </p>
+        <button class="button2">Business Online Banking</button><br /><br>
+        <a href="#" class="link2">Enroll in Business Online Banking</a>
+      </div>
+    </div>
+  </div>
+  <footer class="foot">
+    <div class="row row1">
+        <div class="col-md-1"></div>
+       <div class="col-md-4">
+         <section class="sec2">
+           <p class="text14">ACCESSIBILITY</p>
+         <p class="text14">MEMBERSHIP</p>
+         <p class="text14">FORMS</p>
+         <p class="text14">ABOUT US</p>
+         <p class="text14">ROUTING & NUMBER 325081403</p>
+         <p class="text14">NEWS & DISCOUNTS</p>
+         </section>
+
+         <section class="sec1">
+           <p class="text15">©2025 ALL RIGHTS RESERVED</p>
+           <p class="text16">BOEING EMPLOYEES' CREDIT UNION NMLS ID 490518</p>
+           <p class="text17">FEDERALLY INSURED BY NCUA.</p>
+           <p class="text18">EQUAL HOUSING OPPORTUNITY LENDER</p>
+          </section>
+          
+       </div>
+       <div class="col-md-3 sec2">
+         <p class="text14">BLOG</p>
+         <p class="text14">PAYMENT RELIEF ASSISTANCE</p>
+         <p class="text14">AVOIDING FORECLOSURE</p>
+         <p class="text14">CONTACT</p>
+         <p class="text14">CAREERS</p>
+         <p class="text14">FRAUD & SECURITY</p>
+         <section>
+           <img src="/Images/Logo_Miscellaneous_Equal-Housing-2.svg" alt="" width="80">
+           <img src="/Images/download.gif" alt="" width="80">
+         </section>
+       </div>
+       <div class="col-md-2 sec2">
+         <p class="text14">PRIVACY</p>
+         <p class="text14">TERMS & CONDITIONS</p>
+         <p class="text14">SEND A SUGGESTION</p>
+         <p class="text14">NEWSROOM</p>
+         <p class="text14">REFER A FRIEND</p>
+       </div>
+       <div class="col-md-2">
+         <p class="text14">FOLLOW     </p>
+         <div class="icons1">
+           <i class="fa fa-facebook" style="font-size:36px" ></i>
+           <i class="fa fa-instagram" style="font-size:36px"></i>
+           <i class="fa-brands fa-x-twitter" style="font-size:36px"></i>
+           <br>
+           <i class="fa fa-linkedin" style="font-size:36px"></i>
+           <i class="fa fa-youtube" style="font-size:36px"></i>
+         </div>
+       </div>
+    </div>
+ </footer>
+
+  
+  <!-- Login Script -->
+  <script>
+   document.getElementById("loginBtn").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+  const userId = document.getElementById("userId").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const loginError = document.getElementById("loginError");
+  const userIdError = document.getElementById("userIdError");
+  const passwordError = document.getElementById("passwordError");
+
+  // Clear previous small errors
+  userIdError.style.display = "none";
+  passwordError.style.display = "none";
+  loginError.style.display = "none";
+
+  let hasError = false;
+
+  if (!userId) {
+    userIdError.innerText = "Please enter your User ID.";
+    userIdError.style.display = "block";
+    hasError = true;
+  }
+
+  if (!password) {
+    passwordError.innerText = "Please enter your Password.";
+    passwordError.style.display = "block";
+    hasError = true;
+  }
+
+  if (hasError) {
+    return; // Don't continue to login check if there are field errors
+  }
+
+  // Now check credentials
+  if (userId === "Choiceschanges@bellsouth.net" && password === "100989") {
+    window.location.href = "dashboad.html";
+  } else {
+    loginError.style.display = "block"; // Big red box for wrong login
+  }
+});
+
+  </script>
+
+  <!-- Add this script to your login.html file -->
+<script>
+  function login() {
+    const enteredPassword = document.getElementById('password').value;
+    const savedPassword = localStorage.getItem('userPassword') || 'defaultPassword';
+    if (enteredPassword === savedPassword) {
+      // Proceed to dashboard
+      window.location.href = 'dashboad.html';
+    } else {
+      alert('Incorrect password.');
+    }
+  }
+</script>
+</body>
+</html>

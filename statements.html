@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Statements -     </title>
+  <link rel="stylesheet" href="dash.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+      <!-- Sidebar + Mobile Menu -->
+<aside class="sidebar" id="sidebar">
+    <h2 style="font-size: 50px;">    </h2>
+    <nav id="sidebarMenu">
+      <a href="dashboad.html">🏠 Dashboard</a>
+      <a href="account.html">💳 Accounts</a>
+      <a href="transfer.html">💸 Transfer</a>
+      <a href="statements.html">📈 Statements</a>
+      <a href="settings.html">⚙️ Settings</a>
+      <a href="index.html">🚪 Logout</a>
+    </nav>
+  </aside>
+  
+  <!-- Hamburger for Mobile -->
+  <header class="mobile-header">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="mobile-title">     Dashboard</span>
+  </header>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="header-left">
+          <h1>Yearly Financial Overview</h1>
+        </div>
+        <div class="profile-icon">
+          <img src="https://i.pravatar.cc/40?img=3" alt="Profile" />
+        </div>
+      </header>
+
+      <section class="charts">
+        <div class="chart-container">
+          <h3>📈 Yearly Balance Trend</h3>
+          <canvas id="balanceChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h3>💰 Yearly Savings Graph</h3>
+          <canvas id="savingsChart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <style>
+    .charts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .chart-container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .chart-container h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    canvas {
+      width: 100%;
+      height: 300px;
+    }
+
+    @media (max-width: 768px) {
+      .charts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script>
+    // Balance Line Chart
+    const balanceCtx = document.getElementById('balanceChart').getContext('2d');
+    new Chart(balanceCtx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+          label: 'Balance ($)',
+          data: [3200, 3400, 3000, 3500, 3700, 3900, 4100, 4000, 4200, 4300, 4500, 4700],
+          borderColor: '#3498db',
+          backgroundColor: 'rgba(52, 152, 219, 0.1)',
+          fill: true,
+          tension: 0.4
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: true }
+        }
+      }
+    });
+
+    // Savings Bar Chart
+    const savingsCtx = document.getElementById('savingsChart').getContext('2d');
+    new Chart(savingsCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+          label: 'Savings ($)',
+          data: [200, 300, 250, 400, 350, 450, 500, 420, 480, 510, 530, 600],
+          backgroundColor: '#2ecc71',
+          borderRadius: 10
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: true }
+        }
+      }
+    });
+    function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
+  </script>
+</body>
+</html>

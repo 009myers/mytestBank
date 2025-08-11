@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transfers -     </title>
+  <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar + Mobile Menu -->
+<aside class="sidebar" id="sidebar">
+    <h2 style="font-size: 50pxx;">    </h2>
+    <nav id="sidebarMenu">
+      <a href="dashboad.html">🏠 Dashboard</a>
+      <a href="account.html">💳 Accounts</a>
+      <a href="transfer.html">💸 Transfer</a>
+      <a href="statements.html">📈 Statements</a>
+      <a href="settings.html">⚙️ Settings</a>
+      <a href="index.html">🚪 Logout</a>
+    </nav>
+  </aside>
+  
+  <!-- Hamburger for Mobile -->
+  <header class="mobile-header">
+    <button class="hamburger" onclick="toggleSidebar()">☰</button>
+    <span class="mobile-title">     Dashboard</span>
+  </header>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="header-left">
+          <h1>Transfers</h1>
+        </div>
+        <div class="profile-icon">
+          <img src="https://i.pravatar.cc/40?img=3" alt="Profile" />
+        </div>
+      </header>
+
+      <section class="transactions no-transfers">
+        <h2>Transfer History</h2>
+        <p class="no-transfer-message">🚫 No transfers have been made yet.</p>
+      </section>
+    </main>
+  </div>
+  <script>
+        function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}
+  </script>
+</body>
+</html>
